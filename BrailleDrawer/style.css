@@ -1,0 +1,126 @@
+/* Body */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1rem;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Elements */
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(70%);
+    color: red !important;
+    font-weight: bolder;
+}
+
+/* Classes */
+
+.page {
+    display: grid;
+    min-height: 100vh;
+    grid-template: 
+    "head" 0.2fr
+    "nav" 0.1fr
+    "main" 1fr / 1fr;
+}
+
+.braille {
+    display: grid;
+    height: 100px;
+    width: 50px;
+    grid-template:
+    "d0 d1" 1fr
+    "d2 d3" 1fr 
+    "d4 d5" 1fr 
+    "d6 d7" 1fr / 1fr 1fr;
+}
+
+main {
+    display: grid;
+    grid-template:
+    "side box1" 1fr
+    "side box2" 1fr / 1fr 1fr;
+}
+
+.sidebar > button {
+    border-bottom: white 1px solid;
+    background-color: black;
+    color: white;
+}
+
+.braille > button {
+    background-image: url(Pictures/dot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.toggledOn {
+    background-image: url(Pictures/dotOff.png) !important;
+    color: white !important;
+}
+
+
+header {
+    grid-area: head;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: hsl(0, 100%, 20%);
+    border-bottom: 1px red solid;
+    color: white;
+}
+
+.box1 {
+    grid-area: box1;
+    border-bottom-color: transparent;
+    justify-self: center;
+    align-self: center;
+}
+  
+.box2 {
+  grid-area: box2;
+  border-top: 1px black solid;
+  font-size: 3rem;
+  overflow: auto;
+  letter-spacing: -.6rem;
+}
+
+.sidebar {
+  grid-area: side;
+  display: grid;
+  border: 1px solid black;
+}
+
+.dot0{grid-area: d0;}
+.dot1{grid-area: d1;}
+.dot2{grid-area: d2;}
+.dot3{grid-area: d3;}
+.dot4{grid-area: d4;}
+.dot5{grid-area: d5;}
+.dot6{grid-area: d6;}
+.dot7{grid-area: d7;}

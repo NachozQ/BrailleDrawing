@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw with braille</title>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Braille Drawer</h1>
+    </header>
+    <nav></nav>
+    <main>
+      <div class="sidebar">
+          <button class="b1" onclick="braille()">Braille</button>
+          <button class="b2" onclick="reset()">Reset characters</button>
+          <button class="b3" onclick="copy()">Copy to clipboard</button>
+      </div>
+      <div class="box1">
+          <div class="braille">
+              <button class="toggledOn dot0"></button>
+              <button class="toggledOn dot1"></button>
+              <button class="toggledOn dot2"></button>
+              <button class="toggledOn dot3"></button>
+              <button class="toggledOn dot4"></button>
+              <button class="toggledOn dot5"></button>
+              <button class="toggledOn dot6"></button>
+              <button class="toggledOn dot7"></button>
+          </div>
+      </div>
+      <div class="box2"></div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
